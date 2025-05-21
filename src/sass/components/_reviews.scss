@@ -1,0 +1,43 @@
+.reviews {
+    font-family: 'DM Sans';
+
+    &__image__wrap {
+        margin: 80px auto 29px;
+        border-radius: 50%;
+    }
+    
+    &__image {
+        width: 85px;
+        height: 85px;
+    }
+    
+    &__text__wrap {
+        background: #FAFAFA;
+    }
+    
+    &__text {
+        @include font-desc(12px, 2.55, 500);
+    }
+    
+    &__description {
+
+        &__text {
+            @include font-desc(14px, 1.86, 500);
+        }
+        
+        &__indicator {
+    
+            &__wrap {
+            }
+    
+            &1 {
+            }
+            
+            &2 {
+            }
+            
+            &3 {
+            }
+        }
+    }
+}
