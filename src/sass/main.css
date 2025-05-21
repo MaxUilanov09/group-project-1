@@ -1,0 +1,41 @@
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, p, ul, li, img, a, button, input, svg {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.reviews {
+  font-family: "DM Sans";
+}
+.reviews__image__wrap {
+  margin: 80px auto 29px;
+  border-radius: 50%;
+}
+.reviews__image {
+  width: 85px;
+  height: 85px;
+}
+.reviews__text__wrap {
+  background: #FAFAFA;
+}
+.reviews__text {
+  font-size: 12px;
+  line-height: 2.55;
+  font-weight: 500;
+}
+.reviews__description__text {
+  font-size: 14px;
+  line-height: 1.86;
+  font-weight: 500;
+}/*# sourceMappingURL=main.css.map */
