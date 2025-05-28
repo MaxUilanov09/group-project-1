@@ -510,6 +510,80 @@ body {
   background-color: #C7133E;
 }
 
+.footer-first-text {
+  margin-bottom: 17px;
+  width: 232px;
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.footer-doble-text {
+  margin-bottom: 43px;
+  width: 200px;
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.footer-text {
+  margin-left: 79px;
+  width: 140px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  color: #907e82;
+}
+
+.footer-span-one {
+  margin-left: 67px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  font-family: "DM Sans:", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  color: #000000;
+}
+
+.line-div {
+  margin-top: 43px;
+  margin-bottom: 22px;
+}
+
+.footer-span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  font-family: "DM Sans:", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  color: #d41443;
+}
+
+.footer-list {
+  margin-bottom: 46px;
+  display: flex;
+  gap: 27px;
+  margin-left: 137px;
+}
+
 .burger-menu {
   position: fixed;
   top: 0;
