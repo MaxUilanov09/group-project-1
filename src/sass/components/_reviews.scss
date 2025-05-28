@@ -22,6 +22,7 @@
         @include font-desc(12px, 2.55, 500);
         text-align: center;
         margin: 0 auto;
+        padding: 43px 0 26px;
     }
     
     &__description {
@@ -34,6 +35,7 @@
         &__indicator {
     
             &__wrap {
+                position: relative;
                 display: flex;
                 height: 12px;
                 width: 72px;
@@ -42,6 +44,9 @@
     
             &1::before {
                 content: " ";
+                position: absolute;
+                top: 0;
+                left: 0;
                 width: 12px;
                 height: 12px;
                 border-radius: 50%;
@@ -50,6 +55,9 @@
             
             &2::before {
                 content: " ";
+                position: absolute;
+                top: 0;
+                left: 30px;
                 width: 12px;
                 height: 12px;
                 border-radius: 50%;
@@ -58,10 +66,46 @@
             
             &3::before {
                 content: " ";
+                position: absolute;
+                top: 0;
+                left: 60px;
                 width: 12px;
                 height: 12px;
                 border-radius: 50%;
                 background-color: $review-indicator-color;
+            }
+
+            &1::after {
+                content: " ";
+                position: absolute;
+                top: -77px;
+                left: 20px;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: $review-secondary-indicator-color;
+            }
+            
+            &2::after {
+                content: " ";
+                position: absolute;
+                top: -77px;
+                left: 34px;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: $review-secondary-indicator-color;
+            }
+            
+            &3::after {
+                content: " ";
+                position: absolute;
+                top: -77px;
+                left: 48px;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: $review-secondary-indicator-color;
             }
         }
     }
