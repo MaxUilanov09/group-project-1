@@ -1,23 +1,4 @@
-
-:root {
-    --pink: #ffaec0;
-    --beige: #f7d59c;
-    --green: #c7f7b5;
-    --white: #ffffff;
-    --text-dark: #333;
-    --accent: #ff3366;
-    --font-main: 'Arial', sans-serif;
-  }
-  
-
-  body {
-    margin: 0;
-    font-family: var(--font-main);
-    background-color: var(--white);
-    color: var(--text-dark);
-  }
-  
-  .products {
+ .products {
     padding: 50px 20px;
     text-align: center;
   }
