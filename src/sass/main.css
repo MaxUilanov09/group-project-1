@@ -394,6 +394,136 @@ a {
     font-size: 13px;
   }
 }
+.cow {
+  padding-top: 125px;
+  padding-bottom: 140;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+  color: #ff4d7e;
+  margin-bottom: 40px;
+}
+
+section > div:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+section > div:first-of-type img {
+  max-width: 250px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+section p {
+  max-width: 800px;
+  margin: 30px auto;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #333;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 28px;
+  background-color: #ff4d7e;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e0406f;
+}
+
+section > div:last-of-type {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+section > div:last-of-type > div {
+  max-width: 200px;
+  text-align: center;
+}
+
+section > div:last-of-type img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+section > div:last-of-type h3 {
+  font-size: 30px;
+  color: #ff4d7e;
+  margin: 10px 0;
+}
+
+section > div:last-of-type p {
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding: 50px 20px;
+  }
+  section h2 {
+    font-size: 36px;
+  }
+  section > div:first-of-type {
+    gap: 20px;
+  }
+  section > div:first-of-type img {
+    max-width: 220px;
+  }
+  section > div:last-of-type {
+    gap: 30px;
+  }
+}
+@media (max-width: 600px) {
+  section {
+    padding: 40px 15px;
+  }
+  section h2 {
+    font-size: 28px;
+  }
+  section > div:first-of-type {
+    flex-direction: column;
+  }
+  section > div:first-of-type img {
+    max-width: 100%;
+  }
+  section p {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  section > div:last-of-type {
+    flex-direction: column;
+    align-items: center;
+  }
+  section > div:last-of-type > div {
+    margin-bottom: 30px;
+  }
+}
 .reviews {
   font-family: "DM Sans";
 }
