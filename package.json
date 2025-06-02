@@ -4,7 +4,7 @@
   "description": "",
   "homepage": "https://github.com/MaxUilanov09/parcel-project-template",
   "scripts": {
-    "start": "parcel ./src/index.html",
+    "start": "parcel src/index.html",
     "build": "parcel build src/*.html --public-url /parcel-project-template/"
   },
   "repository": {
@@ -22,8 +22,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
-    "html-include": "^0.0.1",
-    "parcel": "^2.6.0",
+    "parcel": "^2.15.2",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
