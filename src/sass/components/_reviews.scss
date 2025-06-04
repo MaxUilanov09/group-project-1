@@ -1,6 +1,7 @@
 .reviews {
-    font-family: 'DM Sans';
+  font-family: 'DM Sans';
 
+<<<<<<< Updated upstream
     &__image__wrap {
         margin: 80px auto 29px;
         border-radius: 50%;
@@ -24,10 +25,32 @@
         margin: 0 auto;
         padding: 43px 0 26px;
         background: linear-gradient($review-text-background-color 0%, $review-text-background-color 23.26%,$review-text-underline-color 23.56%,$review-text-background-color 23.56%,$review-text-background-color 32.85%,$review-text-underline-color 33.15%,$review-text-background-color 33.15%,$review-text-background-color 42.44%,$review-text-underline-color 42.74%,$review-text-background-color 42.74%,$review-text-background-color 52.03%,$review-text-underline-color 52.33%,$review-text-background-color 52.33%,$review-text-background-color 61.62%,$review-text-underline-color 61.92%,$review-text-background-color 61.92%,$review-text-background-color 71.21%,$review-text-underline-color 71.51%,$review-text-background-color 71.51%,$review-text-background-color 80.8%,$review-text-underline-color 81.1%,$review-text-background-color 81.1%,$review-text-background-color 90.39%,$review-text-underline-color 90.69%,$review-text-background-color 90.69%,$review-text-background-color 99.98%,$review-text-underline-color 100.28%,$review-text-background-color 100.28%);
-    }
-    
-    &__description {
+=======
+  &__image__wrap {
+    margin: 80px auto 29px;
+    border-radius: 50%;
+  }
 
+  &__image {
+    width: 85px;
+    height: 85px;
+  }
+
+  &__text__wrap {
+    background: #fafafa;
+  }
+
+  &__text {
+    @include font-desc(12px, 2.55, 500);
+  }
+
+  &__description {
+    &__text {
+      @include font-desc(14px, 1.86, 500);
+>>>>>>> Stashed changes
+    }
+
+<<<<<<< Updated upstream
         &__text {
             @include font-desc(14px, 1.86, 500);
             text-align: center;
@@ -35,6 +58,10 @@
         
         &__indicator {
     
+=======
+    &__indicator {
+      /**
+>>>>>>> Stashed changes
             &__wrap {
                 position: relative;
                 display: flex;
@@ -141,8 +168,9 @@
                 border-radius: 50%;
                 background-color: $review-secondary-indicator-color;
             }
-        }
+            */
     }
+<<<<<<< Updated upstream
 }
 
 @media screen and (min-width: 768px) {
@@ -227,3 +255,7 @@
 @media screen and (min-width: 1200px) {
     
 }
+=======
+  }
+}
+>>>>>>> Stashed changes
