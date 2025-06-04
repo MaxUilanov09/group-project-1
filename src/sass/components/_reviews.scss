@@ -23,8 +23,7 @@
         text-align: center;
         margin: 0 auto;
         padding: 43px 0 26px;
-        // background-size: 56.25%;
-        // background: linear-gradient();
+        background: linear-gradient($review-text-background-color 0%, $review-text-background-color 23.26%,$review-text-underline-color 23.56%,$review-text-background-color 23.56%,$review-text-background-color 32.85%,$review-text-underline-color 33.15%,$review-text-background-color 33.15%,$review-text-background-color 42.44%,$review-text-underline-color 42.74%,$review-text-background-color 42.74%,$review-text-background-color 52.03%,$review-text-underline-color 52.33%,$review-text-background-color 52.33%,$review-text-background-color 61.62%,$review-text-underline-color 61.92%,$review-text-background-color 61.92%,$review-text-background-color 71.21%,$review-text-underline-color 71.51%,$review-text-background-color 71.51%,$review-text-background-color 80.8%,$review-text-underline-color 81.1%,$review-text-background-color 81.1%,$review-text-background-color 90.39%,$review-text-underline-color 90.69%,$review-text-background-color 90.69%,$review-text-background-color 99.98%,$review-text-underline-color 100.28%,$review-text-background-color 100.28%);
     }
     
     &__description {
@@ -144,4 +143,87 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 768px) {
+    .reviews {    
+        &__image__wrap {
+            margin: 121px auto 19px;
+        }
+        
+        &__text__wrap {
+            width: 80.3%;
+            margin: 0px auto 24px;
+        }
+        
+        &__text {
+            width: 74.2%;
+            @include font-desc(14px, 2.16, 500);
+            padding: 47px 0 34px;
+            background: linear-gradient($review-text-background-color 0%, $review-text-background-color 45.94%,$review-text-underline-color 46.5%,$review-text-background-color 46.5%,$review-text-background-color 63.96%,$review-text-underline-color 64.52%,$review-text-background-color 64.52%,$review-text-background-color 81.98%,$review-text-underline-color 82.54%,$review-text-background-color 82.54%,$review-text-background-color 100%,$review-text-underline-color 100.56%,$review-text-background-color 100.56%);
+        }
+        
+        &__description {
+    
+            &__text {
+                @include font-desc(16px, 1.86, 500);
+            }
+            
+            &__indicator {
+        
+                &__wrap {
+                    margin: 35px auto 0;
+                }
+        
+                &1::before {
+                    top: 0;
+                    left: 0;
+                }
+                
+                &2::before {
+                    top: 0;
+                    left: 30px;
+                }
+                
+                &3::before {
+                    top: 0;
+                    left: 60px;
+                }
+    
+                &1::after {
+                    top: -77px;
+                    left: 20px;
+                }
+                
+                &2::after {
+                    top: -77px;
+                    left: 34px;
+                }
+                
+                &3::after {
+                    top: -77px;
+                    left: 48px;
+                }
+    
+                &1::after {
+                    top: -77px;
+                    left: 20px;
+                }
+                
+                &2::after {
+                    top: -77px;
+                    left: 34px;
+                }
+                
+                &3::after {
+                    top: -77px;
+                    left: 48px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
 }

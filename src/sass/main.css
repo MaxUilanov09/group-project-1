@@ -418,6 +418,7 @@ a {
   text-align: center;
   margin: 0 auto;
   padding: 43px 0 26px;
+  background: linear-gradient(#FAFAFA 0%, #FAFAFA 23.26%, #E1E1E1 23.56%, #FAFAFA 23.56%, #FAFAFA 32.85%, #E1E1E1 33.15%, #FAFAFA 33.15%, #FAFAFA 42.44%, #E1E1E1 42.74%, #FAFAFA 42.74%, #FAFAFA 52.03%, #E1E1E1 52.33%, #FAFAFA 52.33%, #FAFAFA 61.62%, #E1E1E1 61.92%, #FAFAFA 61.92%, #FAFAFA 71.21%, #E1E1E1 71.51%, #FAFAFA 71.51%, #FAFAFA 80.8%, #E1E1E1 81.1%, #FAFAFA 81.1%, #FAFAFA 90.39%, #E1E1E1 90.69%, #FAFAFA 90.69%, #FAFAFA 99.98%, #E1E1E1 100.28%, #FAFAFA 100.28%);
 }
 .reviews__description__text {
   font-size: 14px;
@@ -523,6 +524,67 @@ a {
   background-color: #C7133E;
 }
 
+@media screen and (min-width: 768px) {
+  .reviews__image__wrap {
+    margin: 121px auto 19px;
+  }
+  .reviews__text__wrap {
+    width: 80.3%;
+    margin: 0px auto 24px;
+  }
+  .reviews__text {
+    width: 74.2%;
+    font-size: 14px;
+    line-height: 2.16;
+    font-weight: 500;
+    padding: 47px 0 34px;
+    background: linear-gradient(#FAFAFA 0%, #FAFAFA 45.94%, #E1E1E1 46.5%, #FAFAFA 46.5%, #FAFAFA 63.96%, #E1E1E1 64.52%, #FAFAFA 64.52%, #FAFAFA 81.98%, #E1E1E1 82.54%, #FAFAFA 82.54%, #FAFAFA 100%, #E1E1E1 100.56%, #FAFAFA 100.56%);
+  }
+  .reviews__description__text {
+    font-size: 16px;
+    line-height: 1.86;
+    font-weight: 500;
+  }
+  .reviews__description__indicator__wrap {
+    margin: 35px auto 0;
+  }
+  .reviews__description__indicator1::before {
+    top: 0;
+    left: 0;
+  }
+  .reviews__description__indicator2::before {
+    top: 0;
+    left: 30px;
+  }
+  .reviews__description__indicator3::before {
+    top: 0;
+    left: 60px;
+  }
+  .reviews__description__indicator1::after {
+    top: -77px;
+    left: 20px;
+  }
+  .reviews__description__indicator2::after {
+    top: -77px;
+    left: 34px;
+  }
+  .reviews__description__indicator3::after {
+    top: -77px;
+    left: 48px;
+  }
+  .reviews__description__indicator1::after {
+    top: -77px;
+    left: 20px;
+  }
+  .reviews__description__indicator2::after {
+    top: -77px;
+    left: 34px;
+  }
+  .reviews__description__indicator3::after {
+    top: -77px;
+    left: 48px;
+  }
+}
 .footer-first-text {
   margin-bottom: 17px;
   width: 232px;
