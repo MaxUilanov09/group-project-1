@@ -450,9 +450,31 @@ a {
 .reviews {
   font-family: "DM Sans";
 }
+.reviews__swap__wrap {
+  position: relative;
+}
 .reviews__image__wrap {
+  width: 85px;
+  height: 85px;
   margin: 80px auto 29px;
   border-radius: 50%;
+}
+.reviews__image__wrap__copy {
+  width: 85px;
+  height: 85px;
+  margin: 80px auto 29px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 117.5px;
+  margin-top: 0;
+  transform: translateX(100vw);
+}
+.reviews__image__wrap.reviews__swap {
+  transform: translateX(-100vw);
+}
+.reviews__image__wrap__copy.reviews__swap {
+  transform: translateX(0);
 }
 .reviews__image {
   width: 85px;
@@ -460,8 +482,25 @@ a {
 }
 .reviews__text__wrap {
   width: 87.5%;
-  background: #FAFAFA;
+  background-color: #FAFAFA;
+  background-color: darkblue;
   margin: 0px auto 30px;
+}
+.reviews__text__wrap__copy {
+  width: 87.5%;
+  background-color: #FAFAFA;
+  margin: 0px auto 30px;
+  position: absolute;
+  top: 114px;
+  left: 6.25%;
+  transform: translateX(100vw);
+  background-color: darkcyan;
+}
+.reviews__text__wrap.reviews__swap {
+  transform: translateX(-100vw);
+}
+.reviews__text__wrap__copy.reviews__swap {
+  transform: translateX(0);
 }
 .reviews__text {
   width: 56%;
@@ -546,35 +585,9 @@ a {
   border-radius: 50%;
   background-color: #C7133E;
 }
-.reviews__description__indicator1::after {
-  content: " ";
-  position: absolute;
-  top: -77px;
-  left: 20px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #C7133E;
-}
-.reviews__description__indicator2::after {
-  content: " ";
-  position: absolute;
-  top: -77px;
-  left: 34px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #C7133E;
-}
-.reviews__description__indicator3::after {
-  content: " ";
-  position: absolute;
-  top: -77px;
-  left: 48px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #C7133E;
+.reviews__home {
+  background-color: transparent;
+  background-image: url(/src/images/review_home.png);
 }
 
 @media screen and (min-width: 768px) {
@@ -591,6 +604,7 @@ a {
     line-height: 2.16;
     font-weight: 500;
     padding: 47px 0 34px;
+    letter-spacing: 0.04;
     background: linear-gradient(#FAFAFA 0%, #FAFAFA 45.94%, #E1E1E1 46.5%, #FAFAFA 46.5%, #FAFAFA 63.96%, #E1E1E1 64.52%, #FAFAFA 64.52%, #FAFAFA 81.98%, #E1E1E1 82.54%, #FAFAFA 82.54%, #FAFAFA 100%, #E1E1E1 100.56%, #FAFAFA 100.56%);
   }
   .reviews__description__text {
@@ -601,41 +615,49 @@ a {
   .reviews__description__indicator__wrap {
     margin: 35px auto 0;
   }
-  .reviews__description__indicator1::before {
-    top: 0;
-    left: 0;
-  }
-  .reviews__description__indicator2::before {
-    top: 0;
-    left: 30px;
-  }
-  .reviews__description__indicator3::before {
-    top: 0;
-    left: 60px;
-  }
   .reviews__description__indicator1::after {
-    top: -77px;
-    left: 20px;
+    top: -78px;
   }
   .reviews__description__indicator2::after {
-    top: -77px;
-    left: 34px;
+    top: -78px;
   }
   .reviews__description__indicator3::after {
-    top: -77px;
-    left: 48px;
+    top: -78px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews__image__wrap {
+    margin: 123px auto 15px;
+  }
+  .reviews__text__wrap {
+    width: 72.3%;
+    margin: 0px auto 34px;
+  }
+  .reviews__text {
+    width: 81%;
+    font-size: 16px;
+    line-height: 1.86;
+    font-weight: 500;
+    padding: 47px 0 34px;
+    letter-spacing: 0.04;
+    background: linear-gradient(#FAFAFA 0%, #FAFAFA 56.5%, #E1E1E1 57.2%, #FAFAFA 57.2%, #FAFAFA 78.25%, #E1E1E1 78.95%, #FAFAFA 78.95%, #FAFAFA 100%, #E1E1E1 100.7%, #FAFAFA 100.7%);
+  }
+  .reviews__description__text {
+    font-size: 20px;
+    line-height: 1.86;
+    font-weight: 500;
+  }
+  .reviews__description__indicator__wrap {
+    margin: 35px auto 0;
   }
   .reviews__description__indicator1::after {
-    top: -77px;
-    left: 20px;
+    top: -85px;
   }
   .reviews__description__indicator2::after {
-    top: -77px;
-    left: 34px;
+    top: -85px;
   }
   .reviews__description__indicator3::after {
-    top: -77px;
-    left: 48px;
+    top: -85px;
   }
 }
 .locations {
