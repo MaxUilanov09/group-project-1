@@ -109,6 +109,39 @@
                 border-radius: 50%;
                 background-color: $review-secondary-indicator-color;
             }
+
+            &1::after {
+                content: " ";
+                position: absolute;
+                top: -77px;
+                left: 20px;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: $review-secondary-indicator-color;
+            }
+            
+            &2::after {
+                content: " ";
+                position: absolute;
+                top: -77px;
+                left: 34px;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: $review-secondary-indicator-color;
+            }
+            
+            &3::after {
+                content: " ";
+                position: absolute;
+                top: -77px;
+                left: 48px;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: $review-secondary-indicator-color;
+            }
         }
     }
 }
