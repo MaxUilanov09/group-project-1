@@ -274,7 +274,7 @@ a {
 }
 
 .product-title {
-  font-size: 24px;
+  font-size: 34px;
   font-weight: bold;
   color: #ff8cba;
   text-transform: uppercase;
@@ -298,11 +298,37 @@ a {
   margin: 0;
 }
 
-.product-item {
-  background-color: var(--pink);
+.product-item1 {
+  background-color: #ffb8ca;
   border-radius: 30px;
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
+  padding: 30px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.product-item2 {
+  background-color: #f0d1a5;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 200px;
+  padding: 30px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.product-item3 {
+  background-color: #c2e297;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 200px;
   padding: 30px 20px 40px;
   display: flex;
   flex-direction: column;
@@ -324,18 +350,20 @@ a {
 }
 
 .product-imeg {
-  width: 180px;
+  width: 250px;
   height: auto;
   margin-bottom: 20px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255);
+  position: relative;
 }
 
 .product-item-title {
-  font-size: 18px;
+  font-family: "Titan One";
+  font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 90px;
   color: #fff;
 }
 
@@ -344,6 +372,7 @@ a {
 }
 
 .product-text {
+  font-family: "DM Sans";
   color: #fff;
   font-size: 14px;
   margin-bottom: 20px;
@@ -351,7 +380,7 @@ a {
 }
 
 .produckt-button {
-  background-color: #fff;
+  background-color: #cf7d7d;
   border: none;
   border-radius: 50%;
   width: 36px;
@@ -363,8 +392,8 @@ a {
 }
 
 .produckt-button img {
-  width: 16px;
-  height: 16px;
+  width: 30px;
+  height: 30px;
 }
 
 @media (max-width: 992px) {
@@ -493,35 +522,114 @@ a {
   border-radius: 50%;
   background-color: #C7133E;
 }
-.reviews__description__indicator1::after {
-  content: " ";
-  position: absolute;
-  top: -77px;
-  left: 20px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #C7133E;
+
+.locations {
+  padding: 70px 20px;
+  background-color: #fff0f4;
+  text-align: center;
 }
-.reviews__description__indicator2::after {
-  content: " ";
-  position: absolute;
-  top: -77px;
-  left: 34px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #C7133E;
+
+.locations-list {
+  display: flex;
+  justify-content: center;
+  gap: 31px;
+  flex-wrap: wrap;
+  list-style: none;
 }
-.reviews__description__indicator3::after {
-  content: " ";
-  position: absolute;
-  top: -77px;
-  left: 48px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #C7133E;
+
+.location-card {
+  background: white;
+  padding: 90px 20px;
+  border-radius: 20px;
+  max-width: 270px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  list-style: none;
+}
+
+.location-tag {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.cafe {
+  background-color: #F0D1A5;
+}
+
+.truck {
+  background-color: #C2E297;
+}
+
+.location-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.location-card p {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.location-card hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.hours strong {
+  font-family: "DM Sans";
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.time {
+  display: block;
+  font-size: 14px;
+  color: #ff6c90;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-family: "DM Sans";
+  font-size: 16px;
+  color: #999;
+  margin: 8px 0;
+}
+
+.location-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn.red {
+  background-color: #e60039;
+  color: #fff;
+}
+
+.btn.light {
+  background-color: #fff;
+  color: #e60039;
+  border: 1px solid #e60039;
 }
 
 @media screen and (min-width: 768px) {
