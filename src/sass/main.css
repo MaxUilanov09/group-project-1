@@ -404,18 +404,126 @@ a {
   align-items: center;
 }
 
+.cow-img {
+  width: 516px;
+  height: 516px;
+}
+
+.cow-text-wrap {
+  margin-left: 74px;
+  margin-right: 117px;
+}
+
 .cow-title {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  color: #D41443;
   text-align: center;
-  font-size: 42px;
-  font-weight: 800;
-  color: #ff4d7e;
-  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .cow-title {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cow-title {
+    font-size: 58px;
+    margin-bottom: 55px;
+  }
+}
+
+.cow-title-11 {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 351;
+  height: 34;
+  top: 1935px;
+  left: 464px;
+}
+
+.how-its-done-text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  width: 463;
+  height: 79;
+  top: 2156px;
+  left: 702px;
+  display: flex;
+  margin-left: 74px;
+  margin-right: 117px;
+}
+
+.cow-text {
+  font-family: DM Sans, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 194%;
+  letter-spacing: 4%;
+  width: 463;
+  height: 155;
+  top: 2270px;
+  left: 702px;
+  display: flex;
+  margin-left: 74px;
+  margin-right: 117px;
+  margin-top: 35px;
 }
 
 .cow-list {
+  margin-right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.how-its-done-text {
+  display: block;
+}
+
+.cow-item {
+  padding-right: 30px;
+  display: block;
+}
+
+.how-we-make-h3 {
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: right;
+  text-transform: uppercase;
+  width: 98;
+  height: 65;
+  top: 2750px;
+  left: 115px;
+  color: #ff4d7e;
+}
+
+.text-how-we-make-text {
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 2%;
+  width: 330;
+  height: 52;
+  top: 2830px;
+  left: 115px;
 }
 
 .reviews {
