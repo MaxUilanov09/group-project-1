@@ -1,65 +1,77 @@
 .hero {
-    background-color: #FFB8CA;    ;
+    background-color: #FFB8CA;
+    ;
     padding: 80px 50px;
     position: relative;
     overflow: hidden;
 }
-
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .hero-title {
     font-family: "Titan One";
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 100%;
-        letter-spacing: 4%;
-        text-transform: uppercase;
-span{
-   
-        
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+
+    span {
+
+
         font-size: 48px;
         line-height: 96%;
         letter-spacing: 0%;
-      color: #D41443;
-}
+        color: #D41443;
+    }
+
     @media screen and (min-width: 768px) {
         display: block;
         font-family: Titan One;
-            font-weight: 400;
-            font-size: 38px;
-            line-height: 100%;
-            letter-spacing: 4%;
-            text-transform: uppercase;
-            color: #fff;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 100%;
+        letter-spacing: 4%;
+        text-transform: uppercase;
+        color: #fff;
     }
-        @media screen and (min-width: 1200px) {
-            font-family: Titan One;
-                font-weight: 400;
-                font-size: 38px;
-                line-height: 100%;
-                letter-spacing: 4%;
-                text-transform: uppercase;
-        }
+
+    @media screen and (min-width: 1200px) {
+        font-family: Titan One;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 100%;
+        letter-spacing: 4%;
+        text-transform: uppercase;
+    }
 }
 
 .hero-title span {
     @media screen and (min-width: 768px) {
-display: block;
-font-family: Titan One;
-    font-weight: 400;
-    font-size: 58px;
-    line-height: 90%;
-    letter-spacing: 4%;
-    text-transform: uppercase;
-    color: #D41443;
+        display: block;
+        font-family: Titan One;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 90%;
+        letter-spacing: 4%;
+        text-transform: uppercase;
+        color: #D41443;
     }
-        @media screen and (min-width: 1200px) {
-            font-family: Titan One;
-                font-weight: 400;
-                font-size: 58px;
-                line-height: 90%;
-                letter-spacing: 4%;
-                text-transform: uppercase;
-        }
+
+    @media screen and (min-width: 1200px) {
+        font-family: Titan One;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 90%;
+        letter-spacing: 4%;
+        text-transform: uppercase;
+    }
 }
 
 .hero-text {
@@ -99,26 +111,29 @@ font-family: Titan One;
 
 .hero-eco {
     display: none;
+
     @media screen and (min-width: 768px) {
         display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-top: 40px;
-            color: #fff;
+        align-items: center;
+        gap: 15px;
+        margin-top: 40px;
+        color: #fff;
     }
 }
 
 .milk-image {
     display: none;
+
     @media screen and (min-width: 768px) {
-       display: block;
-       width: 124px;
-       height: 126px;
+        display: block;
+        width: 124px;
+        height: 126px;
     }
-        @media screen and (min-width: 1200px) {
-     width: 188px;
-     height: 199px;
-        }
+
+    @media screen and (min-width: 1200px) {
+        width: 188px;
+        height: 199px;
+    }
 }
 
 .icecream-img {
@@ -139,26 +154,29 @@ font-family: Titan One;
 
 .hero-stats {
     display: none;
-    @media screen and (min-width: 768px) {
-display: block;
-font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: right;
-    color: #fff;
-    }
-        @media screen and (min-width: 1200px) {
-            font-size: 14px;
-        }
 
-  
-}
-.hero-numbers{
     @media screen and (min-width: 768px) {
-    display: block;
-    font-family: Titan One;
+        display: block;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: right;
+        color: #fff;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
+
+
+}
+
+.hero-numbers {
+    @media screen and (min-width: 768px) {
+        display: block;
+        font-family: Titan One;
         font-weight: 400;
         font-size: 46px;
         line-height: 100%;
@@ -167,24 +185,26 @@ font-family: "DM Sans", sans-serif;
         text-transform: uppercase;
         color: #D41443;
     }
-        @media screen and (min-width: 1200px) {
 
-        }
+    @media screen and (min-width: 1200px) {}
 }
 
 .girl-img {
     display: none;
+
     @media screen and (min-width: 768px) {
-    
-        display: block; 
-    width: 168px;
-height: 133px; }
-@media screen and (min-width: 1200px) {
-    width: 293px;
-    height: 232px;
-}
-   
-  
+
+        display: block;
+        width: 168px;
+        height: 133px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 293px;
+        height: 232px;
+    }
+
+
 }
 
 .hero-bubble {
