@@ -1,9 +1,37 @@
 .reviews {
     font-family: 'DM Sans';
 
+    &__swap {
+        &__wrap {
+            position: relative;
+        }
+    }
+
     &__image__wrap {
+        width: 85px;
+        height: 85px;
         margin: 80px auto 29px;
         border-radius: 50%;
+    }
+
+    &__image__wrap__copy {
+        width: 85px;
+        height: 85px;
+        margin: 80px auto 29px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 117.5px;
+        margin-top: 0;
+        transform: translateX(100vw);
+    }
+
+    &__image__wrap.reviews__swap {
+        transform: translateX(-100vw);
+    }
+
+    &__image__wrap__copy.reviews__swap {
+        transform: translateX(0);
     }
     
     &__image {
@@ -13,8 +41,28 @@
     
     &__text__wrap {
         width: 87.5%;
-        background: $review-text-background-color;
+        background-color: $review-text-background-color;
+        background-color: darkblue;
         margin: 0px auto 30px;
+    }
+
+    &__text__wrap__copy {
+        width: 87.5%;
+        background-color: $review-text-background-color;
+        margin: 0px auto 30px;
+        position: absolute;
+        top: 114px;
+        left: 6.25%;
+        transform: translateX(100vw);
+        background-color: darkcyan;
+    }
+
+    &__text__wrap.reviews__swap {
+        transform: translateX(-100vw);
+    }
+
+    &__text__wrap__copy.reviews__swap {
+        transform: translateX(0);
     }
     
     &__text {
@@ -26,7 +74,7 @@
         // background-size: 56.25%;
         // background: linear-gradient();
     }
-    
+
     &__description {
 
         &__text {
@@ -35,6 +83,10 @@
         }
         
         &__indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 18px;
     
             &__wrap {
                 position: relative;
@@ -109,38 +161,104 @@
                 border-radius: 50%;
                 background-color: $review-secondary-indicator-color;
             }
+        }
+    }
+    
+    &__home {
+        background-color: transparent;
+        background-image: url(/src/images/review_home.png);
+    }
+}
 
-            &1::after {
-                content: " ";
-                position: absolute;
-                top: -77px;
-                left: 20px;
-                width: 4px;
-                height: 4px;
-                border-radius: 50%;
-                background-color: $review-secondary-indicator-color;
+@media screen and (min-width: 768px) {
+    .reviews {    
+        &__image__wrap {
+            margin: 121px auto 19px;
+        }
+        
+        &__text__wrap {
+            width: 80.3%;
+            margin: 0px auto 24px;
+        }
+        
+        &__text {
+            width: 74.2%;
+            @include font-desc(14px, 2.16, 500);
+            padding: 47px 0 34px;
+            letter-spacing: 0.04;
+            background: linear-gradient($review-text-background-color 0%, $review-text-background-color 45.94%,$review-text-underline-color 46.5%,$review-text-background-color 46.5%,$review-text-background-color 63.96%,$review-text-underline-color 64.52%,$review-text-background-color 64.52%,$review-text-background-color 81.98%,$review-text-underline-color 82.54%,$review-text-background-color 82.54%,$review-text-background-color 100%,$review-text-underline-color 100.56%,$review-text-background-color 100.56%);
+        }
+        
+        &__description {
+    
+            &__text {
+                @include font-desc(16px, 1.86, 500);
             }
             
-            &2::after {
-                content: " ";
-                position: absolute;
-                top: -77px;
-                left: 34px;
-                width: 4px;
-                height: 4px;
-                border-radius: 50%;
-                background-color: $review-secondary-indicator-color;
+            &__indicator {
+        
+                &__wrap {
+                    margin: 35px auto 0;
+                }
+    
+                &1::after {
+                    top: -78px;
+                }
+                
+                &2::after {
+                    top: -78px;
+                }
+                
+                &3::after {
+                    top: -78px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .reviews {    
+        &__image__wrap {
+            margin: 123px auto 15px;
+        }
+        
+        &__text__wrap {
+            width: 72.3%;
+            margin: 0px auto 34px;
+        }
+        
+        &__text {
+            width: 81%;
+            @include font-desc(16px, 1.86, 500);
+            padding: 47px 0 34px;
+            letter-spacing: 0.04;
+            background: linear-gradient($review-text-background-color 0%, $review-text-background-color 56.5%,$review-text-underline-color 57.2%,$review-text-background-color 57.2%,$review-text-background-color 78.25%,$review-text-underline-color 78.95%,$review-text-background-color 78.95%,$review-text-background-color 100%,$review-text-underline-color 100.7%,$review-text-background-color 100.7%);
+        }
+        
+        &__description {
+    
+            &__text {
+                @include font-desc(20px, 1.86, 500);
             }
             
-            &3::after {
-                content: " ";
-                position: absolute;
-                top: -77px;
-                left: 48px;
-                width: 4px;
-                height: 4px;
-                border-radius: 50%;
-                background-color: $review-secondary-indicator-color;
+            &__indicator {
+        
+                &__wrap {
+                    margin: 35px auto 0;
+                }
+    
+                &1::after {
+                    top: -85px;
+                }
+                
+                &2::after {
+                    top: -85px;
+                }
+                
+                &3::after {
+                    top: -85px;
+                }
             }
         }
     }
