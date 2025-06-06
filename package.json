@@ -1,11 +1,15 @@
 {
-  "name": "group-project-1",
+  "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://maxulyanov09.github.io/group-project-1",
+  "homepage": "https://github.com/MaxUilanov09/parcel-project-template",
   "scripts": {
     "start": "parcel src/index.html",
+<<<<<<< Updated upstream
     "build": "parcel build src/*.html --public-url /parcel-project-template/"
+=======
+    "build": "parcel build src/index.html --public-url /parcel-project-template/"
+>>>>>>> Stashed changes
   },
   "repository": {
     "type": "git",
@@ -22,7 +26,11 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
+<<<<<<< Updated upstream
     "parcel": "^2.15.2",
+=======
+    "parcel": "^2.15.1",
+>>>>>>> Stashed changes
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
