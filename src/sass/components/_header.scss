@@ -1,3 +1,10 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
 .tablet-desktop {
   display: none;
   @media screen and (min-width: 1200px) {
@@ -28,16 +35,6 @@
     margin-right: 110px;
   }
 }
-.logo {
-  margin-left: 20px;
-
-  @media screen and (min-width: 768px) {
-    margin-left: 34px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-left: 46px;
-  }
-}
 .burger {
   margin-right: 20px;
   display: block;
@@ -65,9 +62,6 @@
   border-radius: 25px;
   @media screen and (min-width: 768px) {
     display: block;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-right: 115px;
   }
 }
 .header-button:hover {

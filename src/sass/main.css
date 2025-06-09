@@ -37,6 +37,14 @@ a {
   }
 }
 
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
 .tablet-desktop {
   display: none;
 }
@@ -80,20 +88,6 @@ a {
   }
 }
 
-.logo {
-  margin-left: 20px;
-}
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-left: 34px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .logo {
-    margin-left: 46px;
-  }
-}
-
 .burger {
   margin-right: 20px;
   display: block;
@@ -127,11 +121,6 @@ a {
 @media screen and (min-width: 768px) {
   .header-button {
     display: block;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header-button {
-    margin-right: 115px;
   }
 }
 
