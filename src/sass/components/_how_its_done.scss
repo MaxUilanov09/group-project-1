@@ -1,124 +1,121 @@
-<<<<<<< HEAD
-  .cow{
-    padding-top: 125px;
-    padding-bottom: 140px;
-  }
-  .cow-top{
-    display: flex;
-    align-items: center;
-  }
-  .cow-img{
-    width: 516px;
-    height: 516px;
-  }
-.cow-text-wrap{
+.cow {
+  padding-top: 125px;
+  padding-bottom: 140px;
+}
+.cow-top {
+  display: flex;
+  align-items: center;
+}
+.cow-img {
+  width: 516px;
+  height: 516px;
+}
+.cow-text-wrap {
   margin-left: 74px;
   margin-right: 117px;
 }
 .cow-title {
   font-family: 'Titan One';
-font-weight: 400;
-font-size: 34px;
-line-height: 100%;
-letter-spacing: 4%;
-text-transform: uppercase;
-margin-bottom: 26px;
-color: #D41443;
-text-align: center;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  color: #d41443;
+  text-align: center;
   @media screen and (min-width: 768px) {
     font-size: 48px;
     margin-bottom: 50px;
   }
   @media screen and (min-width: 1200px) {
-  font-size: 58px;
-  margin-bottom: 55px;
+    font-size: 58px;
+    margin-bottom: 55px;
   }
-  }
-  .cow-title-small{
-    font-family: 'Titan One';
-font-weight: 400;
-font-size: 30px;
-line-height: 100%;
-letter-spacing: 4%;
-text-align: center;
-text-transform: uppercase;
-display: block;
-color: #FFA5BA;
-  }
-.how-its-done-text{
+}
+.cow-title-small {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  color: #ffa5ba;
+}
+.how-its-done-text {
   font-family: 'DM Sans', sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: 176%;
-letter-spacing: 4%;
-width: 463;
-height: 79;
-top: 2156px;
-left: 702px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  width: 463;
+  height: 79;
+  top: 2156px;
+  left: 702px;
 
   display: flex;
   margin-left: 74px;
   margin-right: 117px;
 }
-.cow-text{
+.cow-text {
   font-family: DM Sans, sans-serif;
-font-weight: 500;
-font-size: 14px;
-line-height: 194%;
-letter-spacing: 4%;
-text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 194%;
+  letter-spacing: 4%;
+  text-align: center;
 }
-.cow-list{
- margin-right: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .cow-button{
-    color: #D41443;
-    background-color: #fff;
-    padding: 14px 37px;
-    font-family: 'DM Sans';
-font-weight: 700;
-font-size: 16px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
-border-color: transparent;
-border-radius: 22px;
-  }
-  .how-its-done-text{
-    display: block;
-  }
-  
-  .cow-item{
-    padding-right: 30px;
-    display: block;
-  }
-.how-we-make-h3{
-font-family: Titan One, sans-serif;
-font-weight: 400;
-font-size: 58px;
-line-height: 100%;
-letter-spacing: 4%;
-text-align: right;
-text-transform: uppercase;
-width: 98;
-height: 65;
-top: 2750px;
-left: 115px;
-color: #ff4d7e;
+.cow-list {
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.text-how-we-make-text{
-font-family: DM Sans, sans-serif;
-font-weight: 700;
-font-size: 16px;
-line-height: 176%;
-letter-spacing: 2%;
-width: 330;
-height: 52;
-top: 2830px;
-left: 115px;
+.cow-button {
+  color: #d41443;
+  background-color: #fff;
+  padding: 14px 37px;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  border-color: transparent;
+  border-radius: 22px;
 }
-=======
->>>>>>> 8648a927ab30d7e4b485cff094eaca799f8095e8
+.how-its-done-text {
+  display: block;
+}
+
+.cow-item {
+  padding-right: 30px;
+  display: block;
+}
+.how-we-make-h3 {
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: right;
+  text-transform: uppercase;
+  width: 98;
+  height: 65;
+  top: 2750px;
+  left: 115px;
+  color: #ff4d7e;
+}
+.text-how-we-make-text {
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 2%;
+  width: 330;
+  height: 52;
+  top: 2830px;
+  left: 115px;
+}
