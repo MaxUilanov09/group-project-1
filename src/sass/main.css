@@ -1,10 +1,11 @@
-a {
-  text-decoration: none;
-}
-
-h1, h2, h3, p, ul, li, img, a, button, input, svg {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -141,18 +142,13 @@ a {
   color: #d41443;
 }
 
-<<<<<<< Updated upstream
 .hero {
-=======
-hero {
->>>>>>> Stashed changes
   background-color: #FFB8CA;
   padding: 80px 50px;
   position: relative;
   overflow: hidden;
 }
 
-<<<<<<< Updated upstream
 .container-hero {
   display: flex;
   justify-content: space-between;
@@ -162,8 +158,6 @@ hero {
   margin: 0 auto;
 }
 
-=======
->>>>>>> Stashed changes
 .hero-title {
   font-family: "Titan One";
   font-weight: 400;
@@ -574,18 +568,140 @@ hero {
   align-items: center;
 }
 
+.cow-img {
+  width: 516px;
+  height: 516px;
+}
+
+.cow-text-wrap {
+  margin-left: 74px;
+  margin-right: 117px;
+}
+
 .cow-title {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  color: #d41443;
   text-align: center;
-  font-size: 42px;
-  font-weight: 800;
-  color: #ff4d7e;
-  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .cow-title {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cow-title {
+    font-size: 58px;
+    margin-bottom: 55px;
+  }
+}
+
+.cow-title-small {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  color: #ffa5ba;
+}
+
+.how-its-done-text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  width: 463;
+  height: 79;
+  top: 2156px;
+  left: 702px;
+  display: flex;
+  margin-left: 74px;
+  margin-right: 117px;
+}
+
+.cow-text {
+  font-family: DM Sans, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 194%;
+  letter-spacing: 4%;
+  text-align: center;
 }
 
 .cow-list {
+  margin-right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cow-button {
+  color: #d41443;
+  background-color: #fff;
+  padding: 14px 37px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  border-color: transparent;
+  border-radius: 22px;
+}
+
+.how-its-done-text {
+  display: block;
+}
+
+.cow-item {
+  padding-right: 30px;
+  display: block;
+}
+
+.how-we-make-h3 {
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: right;
+  text-transform: uppercase;
+  width: 98;
+  height: 65;
+  top: 2750px;
+  left: 115px;
+  color: #ff4d7e;
+}
+
+.text-how-we-make-text {
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 2%;
+  width: 330;
+  height: 52;
+  top: 2830px;
+  left: 115px;
+}
+
+.photo-galery-imag {
+  height: auto;
+  width: 100%;
+}
+
+.photo-galery {
+  background-image: linear-gradient(to bottom, #fff5f6 50%, #fff 50%);
 }
 
 .reviews {
@@ -599,23 +715,50 @@ hero {
   height: 85px;
   margin: 80px auto 29px;
   border-radius: 50%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reviews__image__wrap__copy {
   width: 85px;
   height: 85px;
-  margin: 80px auto 29px;
+  margin: 0 auto 29px;
   border-radius: 50%;
   position: absolute;
   top: 0;
   left: 117.5px;
   margin-top: 0;
   transform: translateX(100vw);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.reviews__image__wrap.reviews__swap {
+.reviews__image__wrap__copy__2 {
+  transform: translateX(200vw);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reviews__image__wrap.reviews__swap1 {
+  transform: translateX(0);
+}
+.reviews__image__wrap__copy.reviews__swap1 {
+  transform: translateX(100vw);
+}
+.reviews__image__wrap__copy__2.reviews__swap1 {
+  transform: translateX(200vw);
+}
+.reviews__image__wrap.reviews__swap2 {
   transform: translateX(-100vw);
 }
-.reviews__image__wrap__copy.reviews__swap {
-  transform: translateX(0);
+.reviews__image__wrap__copy.reviews__swap2 {
+  transform: translateX(-50%);
+}
+.reviews__image__wrap__copy__2.reviews__swap2 {
+  transform: translateX(100vw);
+}
+.reviews__image__wrap.reviews__swap3 {
+  transform: translateX(-200vw);
+}
+.reviews__image__wrap__copy.reviews__swap3 {
+  transform: translateX(-100vw);
+}
+.reviews__image__wrap__copy__2.reviews__swap3 {
+  transform: translateX(-50%);
 }
 .reviews__image {
   width: 85px;
@@ -626,22 +769,50 @@ hero {
   background-color: #FAFAFA;
   background-color: darkblue;
   margin: 0px auto 30px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reviews__text__wrap__copy {
   width: 87.5%;
   background-color: #FAFAFA;
   margin: 0px auto 30px;
   position: absolute;
-  top: 114px;
-  left: 6.25%;
+  top: 100px;
+  left: 50%;
   transform: translateX(100vw);
   background-color: darkcyan;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.reviews__text__wrap.reviews__swap {
+.reviews__text__wrap__copy__2 {
+  transform: translateX(200vw);
+  background-color: darkturquoise;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reviews__text__wrap.reviews__swap1 {
+  transform: translateX(0);
+}
+.reviews__text__wrap__copy.reviews__swap1 {
+  transform: translateX(100vw);
+}
+.reviews__text__wrap__copy__2.reviews__swap1 {
+  transform: translateX(200vw);
+}
+.reviews__text__wrap.reviews__swap2 {
   transform: translateX(-100vw);
 }
-.reviews__text__wrap__copy.reviews__swap {
-  transform: translateX(0);
+.reviews__text__wrap__copy.reviews__swap2 {
+  transform: translateX(-50%);
+}
+.reviews__text__wrap__copy__2.reviews__swap2 {
+  transform: translateX(100vw);
+}
+.reviews__text__wrap.reviews__swap3 {
+  transform: translateX(-200vw);
+}
+.reviews__text__wrap__copy.reviews__swap3 {
+  transform: translateX(-100vw);
+}
+.reviews__text__wrap__copy__2.reviews__swap3 {
+  transform: translateX(-50%);
 }
 .reviews__text {
   width: 56%;
@@ -735,73 +906,62 @@ hero {
   background-color: transparent;
   background-image: url(/src/images/review_home.png);
 }
-.reviews__home {
-  background-color: transparent;
-  background-image: url(/src/images/review_home.png);
-}
 
 @media screen and (min-width: 768px) {
-  .reviews {
-    &__image__wrap {
-      margin: 121px auto 19px;
-    }
-
-    &__text__wrap {
-      width: 80.3%;
-      margin: 0px auto 24px;
-    }
-
-    &__text {
-      width: 74.2%;
-      @include font-desc(14px, 2.16, 500);
-      padding: 47px 0 34px;
-      letter-spacing: 0.04;
-      background: linear-gradient(
-        $review-text-background-color 0%,
-        $review-text-background-color 45.94%,
-        $review-text-underline-color 46.5%,
-        $review-text-background-color 46.5%,
-        $review-text-background-color 63.96%,
-        $review-text-underline-color 64.52%,
-        $review-text-background-color 64.52%,
-        $review-text-background-color 81.98%,
-        $review-text-underline-color 82.54%,
-        $review-text-background-color 82.54%,
-        $review-text-background-color 100%,
-        $review-text-underline-color 100.56%,
-        $review-text-background-color 100.56%
-      );
-    }
-
-    &__description {
-      &__text {
-        @include font-desc(16px, 1.86, 500);
-      }
-
-      &__indicator {
-        &__wrap {
-          margin: 35px auto 0;
-        }
-
-        &1::after {
-          top: -78px;
-        }
-
-        &2::after {
-          top: -78px;
-        }
-
-        &3::after {
-          top: -78px;
-        }
-      }
-    }
+  .reviews__image__wrap {
+    margin: 121px auto 19px;
+  }
+  .reviews__image__wrap__copy {
+    margin: 0 auto 19px;
+    left: 50%;
+  }
+  .reviews__image__wrap__copy__2 {
+    margin: 0 auto 19px;
+    left: 50%;
+  }
+  .reviews__text__wrap {
+    width: 80.3%;
+    margin: 0px auto 24px;
+    transform: translateX(-50%);
+  }
+  .reviews__text {
+    width: 74.2%;
+    font-size: 14px;
+    line-height: 2.16;
+    font-weight: 500;
+    padding: 47px 0 34px;
+    letter-spacing: 0.04;
+    background: linear-gradient(#FAFAFA 0%, #FAFAFA 45.94%, #E1E1E1 46.5%, #FAFAFA 46.5%, #FAFAFA 63.96%, #E1E1E1 64.52%, #FAFAFA 64.52%, #FAFAFA 81.98%, #E1E1E1 82.54%, #FAFAFA 82.54%, #FAFAFA 100%, #E1E1E1 100.56%, #FAFAFA 100.56%);
+  }
+  .reviews__description__text {
+    font-size: 16px;
+    line-height: 1.86;
+    font-weight: 500;
+  }
+  .reviews__description__indicator__wrap {
+    margin: 35px auto 0;
+  }
+  .reviews__description__indicator1::after {
+    top: -78px;
+  }
+  .reviews__description__indicator2::after {
+    top: -78px;
+  }
+  .reviews__description__indicator3::after {
+    top: -78px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .reviews__image__wrap {
     margin: 123px auto 15px;
+  }
+  .reviews__image__wrap__copy {
+    margin: 0 auto 15px;
+    left: 50%;
+  }
+  .reviews__image__wrap__copy__2 {
+    margin: 0 auto 15px;
+    left: 50%;
   }
   .reviews__text__wrap {
     width: 72.3%;
@@ -870,6 +1030,98 @@ hero {
 
 .cafe {
   background-color: #F0D1A5;
+}
+
+.truck {
+  background-color: #C2E297;
+}
+
+.location-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.location-card p {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.location-card hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.hours strong {
+  font-family: "DM Sans";
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.time {
+  display: block;
+  font-size: 14px;
+  color: #ff6c90;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-family: "DM Sans";
+  font-size: 16px;
+  color: #999;
+  margin: 8px 0;
+}
+
+.location-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn.red {
+  background-color: #e60039;
+  color: #fff;
+}
+
+.btn.light {
+  background-color: #fff;
+  color: #e60039;
+  border: 1px solid #e60039;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .locations-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer-first-text {
+  margin-bottom: 17px;
+  width: 232px;
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffa5ba;
 }
 @media screen and (min-width: 768px) {
   .footer-first-text {
