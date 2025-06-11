@@ -40,9 +40,9 @@ a {
 .header {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .tablet-desktop {
@@ -141,18 +141,13 @@ a {
   color: #d41443;
 }
 
-<<<<<<< Updated upstream
-.hero {
-=======
 hero {
->>>>>>> Stashed changes
   background-color: #FFB8CA;
   padding: 80px 50px;
   position: relative;
   overflow: hidden;
 }
 
-<<<<<<< Updated upstream
 .container-hero {
   display: flex;
   justify-content: space-between;
@@ -162,8 +157,6 @@ hero {
   margin: 0 auto;
 }
 
-=======
->>>>>>> Stashed changes
 .hero-title {
   font-family: "Titan One";
   font-weight: 400;
@@ -507,44 +500,18 @@ hero {
 }
 
 .cow-top {
-  align-items: center;
   display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .cow-top {
-    flex-direction: row;
-  }
+  align-items: center;
 }
 
 .cow-img {
-  display: block;
-  width: 280px;
-  height: 279px;
-}
-@media screen and (min-width: 768px) {
-  .cow-img {
-    display: block;
-    width: 340px;
-    height: 339px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .cow-img {
-    width: 516px;
-    height: 516px;
-    display: block;
-  }
+  width: 516px;
+  height: 516px;
 }
 
 .cow-text-wrap {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 162%;
-  letter-spacing: 0%;
-  margin-bottom: 47px;
-  margin-top: 46px;
+  margin-left: 74px;
+  margin-right: 117px;
 }
 
 .cow-title {
@@ -580,7 +547,7 @@ hero {
   text-align: center;
   text-transform: uppercase;
   display: block;
-  color: #ffa5ba;
+  color: #FFA5BA;
 }
 @media screen and (min-width: 768px) {
   .cow-title-small {
@@ -638,12 +605,6 @@ hero {
 }
 
 .cow-button {
-<<<<<<< Updated upstream
-  color: #d41443;
-  background-color: #fff;
-  padding: 14px 37px;
-=======
->>>>>>> Stashed changes
   font-family: "DM Sans";
 }
 @media screen and (min-width: 768px) {
@@ -701,11 +662,6 @@ hero {
   font-size: 16px;
   line-height: 176%;
   letter-spacing: 2%;
-<<<<<<< Updated upstream
-  width: 330;
-  height: 52;
-  top: 2830px;
-  left: 115px;
 }
 
 .photo-galery-imag {
@@ -715,12 +671,6 @@ hero {
 
 .photo-galery {
   background-image: linear-gradient(to bottom, #fff5f6 50%, #fff 50%);
-=======
-}
-
-.photo-galery-imag {
-  width: 100%;
->>>>>>> Stashed changes
 }
 
 .reviews {
@@ -1197,12 +1147,12 @@ hero {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: #e9788e;
   z-index: 9999;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   transform: translateY(0);
   transition: transform 0.3s ease-in-out;
 }
@@ -1210,66 +1160,55 @@ hero {
   transform: translateY(-100%);
 }
 .burger-menu .burger-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   background: none;
   border: none;
   font-size: 32px;
-  align-self: flex-end;
+  color: #ffffff;
   cursor: pointer;
-}
-.burger-menu .mob-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-}
-.burger-menu .mob-list li {
-  margin-bottom: 24px;
-}
-.burger-menu .mob-list li a {
-  font-size: 28px;
-  font-weight: 600;
-  color: #212121;
-  text-decoration: none;
-}
-
-.mobile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.burger-menu {
-  background-color: #e9788e;
-}
-.burger-menu .burger-close {
-  color: white;
+  z-index: 10000;
 }
 .burger-menu .mob-button {
   display: block;
   padding: 18px 49px;
-  background: white;
+  background: #ffffff;
   border-radius: 50px;
   color: #d31245;
   font-weight: 700;
   font-size: 18px;
   border: none;
   cursor: pointer;
-  margin: 0 auto;
+  margin: 80px auto 40px;
+}
+.burger-menu .mob-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.burger-menu .mob-list li {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.burger-menu .mob-list li:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .burger-menu .mob-list li a {
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
-}
-.burger-menu .header-link1 {
+  display: block;
+  padding: 20px 0;
   font-family: "DM Sans";
+  font-size: 20px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #fff;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
-.burger-menu .header-link1:hover {
+.burger-menu .mob-list li a:hover {
   color: #d41443;
 }/*# sourceMappingURL=main.css.map */

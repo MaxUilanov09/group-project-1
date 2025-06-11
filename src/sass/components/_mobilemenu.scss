@@ -4,12 +4,12 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: #e9788e;
   z-index: 9999;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   transform: translateY(0);
   transition: transform 0.3s ease-in-out;
 
@@ -18,75 +18,62 @@
   }
 
   .burger-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     background: none;
     border: none;
     font-size: 32px;
-    align-self: flex-end;
+    color: #ffffff;
     cursor: pointer;
-  }
-
-  .mob-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    li {
-      margin-bottom: 24px;
-
-      a {
-        font-size: 28px;
-        font-weight: 600;
-        color: #212121;
-        text-decoration: none;
-      }
-    }
-  }
-}
-.mobile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.burger-menu {
-  background-color: #e9788e;
-
-  .burger-close {
-    color: white;
+    z-index: 10000;
   }
 
   .mob-button {
     display: block;
-
     padding: 18px 49px;
-    background: white;
+    background: #ffffff;
     border-radius: 50px;
     color: #d31245;
     font-weight: 700;
     font-size: 18px;
     border: none;
     cursor: pointer;
-    margin: 0 auto;
+    margin: 80px auto 40px;
   }
 
   .mob-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     li {
+      width: 100%;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+      &:last-child {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
       a {
-        color: white;
+        display: block;
+        padding: 20px 0;
+        font-family: 'DM Sans';
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 700;
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #d41443;
+        }
       }
     }
-  }
-  .header-link1 {
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #fff;
-  }
-  .header-link1:hover {
-    color: #d41443;
   }
 }
