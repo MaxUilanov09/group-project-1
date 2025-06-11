@@ -494,91 +494,8 @@ a {
     font-size: 13px;
   }
 }
-.cow {
-  padding-top: 125px;
-  padding-bottom: 140px;
-}
-
-.cow-top {
-  display: flex;
-  align-items: center;
-}
-
-.cow-img {
-  width: 516px;
-  height: 516px;
-}
-
-.cow-text-wrap {
-  margin-left: 74px;
-  margin-right: 117px;
-}
-
-.cow-title {
-  font-family: "Titan One";
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 100%;
-  letter-spacing: 4%;
-  text-transform: uppercase;
-  margin-bottom: 26px;
-  color: #D41443;
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .cow-title {
-    font-size: 48px;
-    margin-bottom: 50px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .cow-title {
-    font-size: 58px;
-    margin-bottom: 55px;
-  }
-}
-
-.cow-title-small {
-  font-family: "Titan One";
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 100%;
-  letter-spacing: 4%;
-  text-align: center;
-  text-transform: uppercase;
-  display: block;
-  color: #FFA5BA;
-}
-
-.how-its-done-text {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 176%;
-  letter-spacing: 4%;
-  width: 463;
-  height: 79;
-  top: 2156px;
-  left: 702px;
-  display: flex;
-  margin-left: 74px;
-  margin-right: 117px;
-}
-
-.cow-text {
-  font-family: DM Sans, sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 194%;
-  letter-spacing: 4%;
-  text-align: center;
-}
-
-.cow-list {
-  margin-right: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.photo-galery-imag {
+  width: 100%;
 }
 
 .cow-button {
@@ -646,22 +563,49 @@ a {
   height: 85px;
   margin: 80px auto 29px;
   border-radius: 50%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reviews__image__wrap__copy {
   width: 85px;
   height: 85px;
-  margin: 80px auto 29px;
+  margin: 0 auto 29px;
   border-radius: 50%;
   position: absolute;
   top: 0;
   left: 117.5px;
   margin-top: 0;
   transform: translateX(100vw);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.reviews__image__wrap.reviews__swap {
+.reviews__image__wrap__copy__2 {
+  transform: translateX(200vw);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reviews__image__wrap.reviews__swap1 {
+  transform: translateX(0);
+}
+.reviews__image__wrap__copy.reviews__swap1 {
+  transform: translateX(100vw);
+}
+.reviews__image__wrap__copy.reviews__swap1 {
+  transform: translateX(200vw);
+}
+.reviews__image__wrap.reviews__swap2 {
   transform: translateX(-100vw);
 }
-.reviews__image__wrap__copy.reviews__swap {
+.reviews__image__wrap__copy.reviews__swap2 {
+  transform: translateX(0);
+}
+.reviews__image__wrap__copy.reviews__swap2 {
+  transform: translateX(100vw);
+}
+.reviews__image__wrap.reviews__swap3 {
+  transform: translateX(-200vw);
+}
+.reviews__image__wrap__copy.reviews__swap3 {
+  transform: translateX(-100vw);
+}
+.reviews__image__wrap__copy.reviews__swap3 {
   transform: translateX(0);
 }
 .reviews__image {
@@ -673,22 +617,50 @@ a {
   background-color: #FAFAFA;
   background-color: darkblue;
   margin: 0px auto 30px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reviews__text__wrap__copy {
   width: 87.5%;
   background-color: #FAFAFA;
   margin: 0px auto 30px;
   position: absolute;
-  top: 114px;
-  left: 6.25%;
+  top: 100px;
+  left: 50%;
   transform: translateX(100vw);
   background-color: darkcyan;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.reviews__text__wrap.reviews__swap {
+.reviews__text__wrap__copy__2 {
+  transform: translateX(200vw);
+  background-color: darkturquoise;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reviews__text__wrap.reviews__swap1 {
+  transform: translateX(0);
+}
+.reviews__text__wrap__copy.reviews__swap1 {
+  transform: translateX(100vw);
+}
+.reviews__text__wrap__copy__2.reviews__swap1 {
+  transform: translateX(200vw);
+}
+.reviews__text__wrap.reviews__swap2 {
   transform: translateX(-100vw);
 }
-.reviews__text__wrap__copy.reviews__swap {
-  transform: translateX(0);
+.reviews__text__wrap__copy.reviews__swap2 {
+  transform: translateX(-50%);
+}
+.reviews__text__wrap__copy__2.reviews__swap2 {
+  transform: translateX(100vw);
+}
+.reviews__text__wrap.reviews__swap3 {
+  transform: translateX(-200vw);
+}
+.reviews__text__wrap__copy.reviews__swap3 {
+  transform: translateX(-100vw);
+}
+.reviews__text__wrap__copy__2.reviews__swap3 {
+  transform: translateX(-50%);
 }
 .reviews__text {
   width: 56%;
