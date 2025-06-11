@@ -2,6 +2,7 @@
     font-family: 'DM Sans';
 
     &__swap {
+        // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
         &__wrap {
             position: relative;
         }
@@ -12,25 +13,60 @@
         height: 85px;
         margin: 80px auto 29px;
         border-radius: 50%;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__image__wrap__copy {
         width: 85px;
         height: 85px;
-        margin: 80px auto 29px;
+        margin: 0 auto 29px;
         border-radius: 50%;
         position: absolute;
         top: 0;
         left: 117.5px;
         margin-top: 0;
         transform: translateX(100vw);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__image__wrap.reviews__swap {
+    &__image__wrap__copy__2 {
+        transform: translateX(200vw);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__image__wrap.reviews__swap1 {
+        transform: translateX(0);
+    }
+
+    &__image__wrap__copy.reviews__swap1 {
+        transform: translateX(100vw);
+    }
+
+    &__image__wrap__copy.reviews__swap1 {
+        transform: translateX(200vw);
+    }
+
+    &__image__wrap.reviews__swap2 {
         transform: translateX(-100vw);
     }
 
-    &__image__wrap__copy.reviews__swap {
+    &__image__wrap__copy.reviews__swap2 {
+        transform: translateX(0);
+    }
+
+    &__image__wrap__copy.reviews__swap2 {
+        transform: translateX(100vw);
+    }
+
+    &__image__wrap.reviews__swap3 {
+        transform: translateX(-200vw);
+    }
+
+    &__image__wrap__copy.reviews__swap3 {
+        transform: translateX(-100vw);
+    }
+
+    &__image__wrap__copy.reviews__swap3 {
         transform: translateX(0);
     }
     
@@ -44,6 +80,7 @@
         background-color: $review-text-background-color;
         background-color: darkblue;
         margin: 0px auto 30px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
     }
 
     &__text__wrap__copy {
@@ -51,18 +88,53 @@
         background-color: $review-text-background-color;
         margin: 0px auto 30px;
         position: absolute;
-        top: 114px;
-        left: 6.25%;
+        top: 100px;
+        left: 50%;
         transform: translateX(100vw);
         background-color: darkcyan;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
     }
 
-    &__text__wrap.reviews__swap {
+    &__text__wrap__copy__2 {
+        transform: translateX(200vw);
+        background-color: darkturquoise;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__text__wrap.reviews__swap1 {
+        transform: translateX(0);
+    }
+
+    &__text__wrap__copy.reviews__swap1 {
+        transform: translateX(100vw);
+    }
+
+    &__text__wrap__copy__2.reviews__swap1 {
+        transform: translateX(200vw);
+    }
+
+    &__text__wrap.reviews__swap2 {
         transform: translateX(-100vw);
     }
 
-    &__text__wrap__copy.reviews__swap {
-        transform: translateX(0);
+    &__text__wrap__copy.reviews__swap2 {
+        transform: translateX(-50%);
+    }
+
+    &__text__wrap__copy__2.reviews__swap2 {
+        transform: translateX(100vw);
+    }
+
+    &__text__wrap.reviews__swap3 {
+        transform: translateX(-200vw);
+    }
+
+    &__text__wrap__copy.reviews__swap3 {
+        transform: translateX(-100vw);
+    }
+
+    &__text__wrap__copy__2.reviews__swap3 {
+        transform: translateX(-50%);
     }
     
     &__text {
