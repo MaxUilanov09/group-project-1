@@ -1,0 +1,277 @@
+<<<<<<< Updated upstream
+.cow {
+  padding-top: 125px;
+  padding-bottom: 140px;
+}
+.cow-top {
+  display: flex;
+  align-items: center;
+}
+.cow-img {
+  width: 516px;
+  height: 516px;
+}
+.cow-text-wrap {
+  margin-left: 74px;
+  margin-right: 117px;
+=======
+ .cow{
+    padding-top: 125px;
+    padding-bottom: 140px;
+  }
+  .cow-top{
+
+    align-items: center;
+      display: flex;
+flex-direction: column;
+ @media screen and (min-width: 768px) {
+  flex-direction: row;
+  }
+ 
+  }
+  .cow-img{
+      display: block;
+      width: 280px;
+      height: 279px;
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 340px;
+    height: 339px;
+  }
+   @media screen and (min-width: 1200px) {
+    width: 516px;
+    height: 516px;
+    display: block;
+  }
+  }
+.cow-text-wrap{
+  font-family: 'DM Sans', sans-serif;
+font-weight: 500;
+font-size: 12px;
+line-height: 162%;
+letter-spacing: 0%;
+margin-bottom: 47px;
+margin-top: 46px;
+
+>>>>>>> Stashed changes
+}
+.cow-title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  color: #d41443;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    margin-bottom: 55px;
+  }
+<<<<<<< Updated upstream
+}
+.cow-title-small {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  color: #ffa5ba;
+}
+.how-its-done-text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  width: 463;
+  height: 79;
+  top: 2156px;
+  left: 702px;
+
+  display: flex;
+  margin-left: 74px;
+  margin-right: 117px;
+}
+.cow-text {
+  font-family: DM Sans, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 194%;
+  letter-spacing: 4%;
+  text-align: center;
+}
+.cow-list {
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cow-button {
+  color: #d41443;
+  background-color: #fff;
+  padding: 14px 37px;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  border-color: transparent;
+  border-radius: 22px;
+}
+.how-its-done-text {
+  display: block;
+}
+
+.cow-item {
+  padding-right: 30px;
+  display: block;
+}
+.how-we-make-h3 {
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: right;
+  text-transform: uppercase;
+  width: 98;
+  height: 65;
+  top: 2750px;
+  left: 115px;
+  color: #ff4d7e;
+}
+.text-how-we-make-text {
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 2%;
+  width: 330;
+  height: 52;
+  top: 2830px;
+  left: 115px;
+}
+=======
+  }
+  .cow-title-small{
+    font-family: 'Titan One';
+font-weight: 400;
+font-size: 30px;
+line-height: 100%;
+letter-spacing: 4%;
+text-align: center;
+text-transform: uppercase;
+display: block;
+color: #FFA5BA;
+ @media screen and (min-width: 768px) {
+   margin-bottom: 15px;
+   font-size: 18px;
+  }
+  @media screen and (min-width: 1200px) {
+font-size: 26px;
+margin-bottom: 16px;
+  }
+  }
+.how-its-done-text{
+
+font-family: 'DM Sans', sans-serif;
+font-weight: 500;
+font-size: 12px;
+line-height: 162%;
+letter-spacing: 0%;
+margin-bottom: 47px;
+
+  @media screen and (min-width: 768px) {
+font-size: 14px;
+line-height: 176%;
+letter-spacing: 0%;
+margin-bottom: 49px;
+margin-top: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+font-size: 16px;
+line-height: 176%;
+letter-spacing: 4%;
+margin-bottom: 35px;
+  }
+}
+.cow-text{
+  font-family: 'DM Sans', sans-serif;
+font-weight: 500;
+font-size: 14px;
+letter-spacing: 4%;    
+color: #907E82;
+margin-top: 35px;
+
+}
+.cow-list{
+ margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cow-button{
+    font-family: 'DM Sans';
+    @media screen and (min-width: 768px) {
+  color: #D41443;
+  background-color: #fff;
+  margin-left: 396px;
+  margin-top: 62px;
+  padding: 14px 37px;
+  border-color: transparent;
+text-align: center;
+font-size: 16px;
+
+  }
+    @media screen and (min-width: 1200px) {
+    margin-top: 45px;
+  margin-left: 74px;
+    color: #D41443;
+    background-color: #fff;
+    padding: 14px 37px;
+    
+font-weight: 700;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+border-color: transparent;
+border-radius: 22px;
+}
+  }
+  .how-its-done-text{
+    display: block;
+  }
+  
+  .cow-item{
+  margin-right: 30px;
+    display: block;
+  }
+.how-we-make-h3{
+font-family: 'Titan One', sans-serif;
+font-weight: 400;
+font-size: 58px;
+line-height: 100%;
+letter-spacing: 4%;
+text-align: right;
+text-transform: uppercase;
+color: #ff4d7e;
+}
+.text-how-we-make-text{
+font-family: 'DM Sans', sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 176%;
+letter-spacing: 2%;
+}
+>>>>>>> Stashed changes
