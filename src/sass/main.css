@@ -589,6 +589,7 @@ a {
 .cow {
   padding-top: 125px;
   padding-bottom: 140px;
+  background-color: #FFF5F6;
 }
 
 .cow-top {
@@ -860,6 +861,7 @@ a {
 
 .reviews {
   font-family: "DM Sans";
+  overflow: hidden;
 }
 .reviews__swap__wrap {
   position: relative;
