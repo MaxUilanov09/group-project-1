@@ -1,6 +1,6 @@
 .header {
   position: absolute;
-  top: 0;
+  top: 38px;
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -78,4 +78,8 @@
 }
 .header-link:hover {
   color: #d41443;
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
 }

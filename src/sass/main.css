@@ -40,7 +40,7 @@ a {
 
 .header {
   position: absolute;
-  top: 0;
+  top: 38px;
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -142,9 +142,15 @@ a {
   color: #d41443;
 }
 
+.container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .hero {
   background-color: #FFB8CA;
   padding: 80px 50px;
+  padding-top: 171px;
   position: relative;
   overflow: hidden;
 }
@@ -336,6 +342,9 @@ a {
 
 .girl-img {
   display: none;
+  position: absolute;
+  right: 8%;
+  bottom: -225px;
 }
 @media screen and (min-width: 768px) {
   .girl-img {
@@ -537,8 +546,8 @@ a {
   background-color: #fff;
   border: none;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -546,8 +555,8 @@ a {
 }
 
 .produckt-button img {
-  width: 16px;
-  height: 16px;
+  width: 40px;
+  height: 40px;
 }
 
 @media (max-width: 992px) {
@@ -618,7 +627,7 @@ a {
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   margin-bottom: 47px;
   margin-top: 46px;
 }
@@ -628,7 +637,7 @@ a {
   font-weight: 400;
   font-size: 34px;
   line-height: 100%;
-  letter-spacing: 4%;
+  letter-spacing: 0.04;
   text-transform: uppercase;
   margin-bottom: 26px;
   color: #d41443;
@@ -652,7 +661,7 @@ a {
   font-weight: 400;
   font-size: 30px;
   line-height: 100%;
-  letter-spacing: 4%;
+  letter-spacing: 0.04;
   text-align: center;
   text-transform: uppercase;
   display: block;
@@ -676,14 +685,14 @@ a {
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   margin-bottom: 47px;
 }
 @media screen and (min-width: 768px) {
   .how-its-done-text {
     font-size: 14px;
     line-height: 176%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     margin-bottom: 49px;
     margin-top: 100px;
     margin-right: 36px;
@@ -694,7 +703,7 @@ a {
   .how-its-done-text {
     font-size: 16px;
     line-height: 176%;
-    letter-spacing: 4%;
+    letter-spacing: 0.04;
     margin-bottom: 35px;
     margin-left: 74px;
   }
@@ -705,14 +714,14 @@ a {
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #907E82;
 }
 @media screen and (min-width: 768px) {
   .cow-text {
     font-size: 14px;
     line-height: 176%;
-    letter-spacing: 4%;
+    letter-spacing: 0.04;
     margin-left: 17px;
     margin-right: 36px;
   }
@@ -721,7 +730,7 @@ a {
   .cow-text {
     font-size: 14px;
     line-height: 194%;
-    letter-spacing: 4%;
+    letter-spacing: 0.04;
     margin-left: 74px;
     margin-right: 117px;
   }
@@ -738,7 +747,7 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   margin-top: 17px;
   text-align: center;
   border-color: transparent;
@@ -753,7 +762,7 @@ a {
   .cow-button {
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     margin-top: 62px;
     color: #D41443;
@@ -774,7 +783,7 @@ a {
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     border-color: transparent;
     border-radius: 22px;
@@ -790,19 +799,19 @@ a {
   font-weight: 400;
   font-size: 36px;
   line-height: 100%;
-  letter-spacing: 4%;
+  letter-spacing: 0.04;
   color: #D41443;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 768px) {
   .how-we-make-h3 {
     font-size: 48px;
-    letter-spacing: 4%;
   }
 }
 @media screen and (min-width: 1200px) {
   .how-we-make-h3 {
     font-size: 58px;
-    letter-spacing: 4%;
+    letter-spacing: 0.04;
     margin-right: 30px;
   }
 }
@@ -812,7 +821,7 @@ a {
   font-weight: 700;
   font-size: 12px;
   line-height: 170%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 @media screen and (min-width: 768px) {
   .text-how-we-make-text {
@@ -824,7 +833,7 @@ a {
   .text-how-we-make-text {
     font-size: 16px;
     line-height: 176%;
-    letter-spacing: 2%;
+    letter-spacing: 0.02;
     margin-right: 30px;
   }
 }
@@ -982,6 +991,7 @@ a {
 }
 .reviews__description__indicator__wrap {
   position: relative;
+  position: relative;
   display: flex;
   height: 12px;
   width: 72px;
@@ -989,6 +999,9 @@ a {
 }
 .reviews__description__indicator1::before {
   content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -1002,6 +1015,9 @@ a {
   position: absolute;
   top: 0;
   left: 30px;
+  position: absolute;
+  top: 0;
+  left: 30px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -1009,6 +1025,9 @@ a {
 }
 .reviews__description__indicator3::before {
   content: " ";
+  position: absolute;
+  top: 0;
+  left: 60px;
   position: absolute;
   top: 0;
   left: 60px;
