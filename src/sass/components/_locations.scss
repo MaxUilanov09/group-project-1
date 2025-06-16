@@ -84,6 +84,8 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-top: 56px;
+    margin-bottom: 113px;
   }
   
   .btn {
@@ -116,5 +118,18 @@
       flex-direction: column;
       align-items: center;
     }
+
+    .location-buttons {
+      margin-top: 81px;
+      margin-bottom: 158px;
+    }
+  
+  @media (max-width: 1200px) {}
+
+    .location-buttons {
+      margin-top: 86px;
+      margin-bottom: 165px;
+    }
+
   }
   

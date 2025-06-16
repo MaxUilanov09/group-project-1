@@ -36,6 +36,11 @@
   }
 }
 .burger {
+  position: relative;
+  width: 20px;
+  height: 12px;
+  background-color: transparent;
+  border: none;
   margin-right: 20px;
   display: block;
   @media screen and (min-width: 768px) {
@@ -45,6 +50,25 @@
   @media (min-width: 1200px) {
     display: none;
   }
+}
+.burger::before {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 12px;
+  border-top: 1px solid #D41443;
+  border-bottom: 1px solid #D41443;
+  margin: auto;
+}
+.burger::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 1px;
+  background-color: #D41443;
 }
 .header-button {
   display: none;
